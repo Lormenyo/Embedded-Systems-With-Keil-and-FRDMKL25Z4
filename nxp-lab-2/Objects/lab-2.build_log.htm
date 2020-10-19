@@ -1,0 +1,103 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: selorm lodonu, Hewlett-Packard, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.3.0
+Target DLL:      CMSIS_AGDI.dll V1.32.6.0
+Dialog DLL:      TARMCM1.DLL V1.14.2.0
+ 
+<h2>Project:</h2>
+C:\Users\selor\Desktop\Hannah\Embedded\nxp-lab-2\lab-2.uvprojx
+Project File Date:  10/14/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling industrial_automation.c...
+industrial_automation.c(1): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include <MKL25Z4.h>>
+industrial_automation.c(35): warning:  #1295-D: Deprecated declaration systick_clock - give arg types
+  void systick_clock();
+industrial_automation.c(38): warning:  #1295-D: Deprecated declaration check_machine_status - give arg types
+  void check_machine_status();
+industrial_automation.c(39): warning:  #1295-D: Deprecated declaration check_direction_status - give arg types
+  void check_direction_status();
+industrial_automation.c(40): warning:  #1295-D: Deprecated declaration check_speed_status - give arg types
+  void check_speed_status();
+industrial_automation.c(41): warning:  #1295-D: Deprecated declaration flashDuringStop - give arg types
+  void flashDuringStop();
+industrial_automation.c(42): warning:  #1295-D: Deprecated declaration stopFlashDuringGo - give arg types
+  void stopFlashDuringGo();
+industrial_automation.c(43): warning:  #1295-D: Deprecated declaration turnAllSegOff - give arg types
+  void turnAllSegOff();
+industrial_automation.c(44): warning:  #1295-D: Deprecated declaration whiteFlashDuringFastForward - give arg types
+  void whiteFlashDuringFastForward();
+industrial_automation.c(45): warning:  #1295-D: Deprecated declaration whiteFlashDuringForward - give arg types
+  void whiteFlashDuringForward();
+industrial_automation.c(46): warning:  #1295-D: Deprecated declaration flashExtYellowDuringForward - give arg types
+  void flashExtYellowDuringForward();
+industrial_automation.c(47): warning:  #1295-D: Deprecated declaration flashExtRedDuringForward - give arg types
+  void flashExtRedDuringForward();
+industrial_automation.c(48): warning:  #1295-D: Deprecated declaration flashBoardBlueDuringReverse - give arg types
+  void flashBoardBlueDuringReverse();
+industrial_automation.c(49): warning:  #1295-D: Deprecated declaration flashBoardBlueDuringFastReverse - give arg types
+  void flashBoardBlueDuringFastReverse();
+industrial_automation.c(50): warning:  #1295-D: Deprecated declaration flashExtRedDuringReverse - give arg types
+  void flashExtRedDuringReverse();
+industrial_automation.c(51): warning:  #1295-D: Deprecated declaration flashExtYellowDuringReverse - give arg types
+  void flashExtYellowDuringReverse();
+industrial_automation.c(54): warning:  #1295-D: Deprecated declaration millis - give arg types
+  unsigned long millis();
+industrial_automation.c(432): warning:  #177-D: function "flashBoardWhite"  was declared but never referenced
+  static void flashBoardWhite(int t){ //ACTIVE LOW
+industrial_automation.c: 18 warnings, 0 errors
+linking...
+Program Size: Code=4656 RO-data=224 RW-data=112 ZI-data=352  
+".\Objects\lab-2.axf" - 0 Error(s), 18 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.Kinetis_KLxx_DFP.1.15.0.pack
+                Keil.Kinetis_KLxx_DFP.1.15.0
+                NXP Kinetis KLxx Series Device Support and Examples
+   * Component: Startup Version: 2.5.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\MKL25Z128xxx4
+  .\RTE\_Target_1
+  C:\Users\selor\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\selor\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil::Device:Startup:2.5.0
+      Include file:  Device\Source\system_MKL25Z4.h
+      Source file:   Device\Source\system_MKL25Z4.c
+      Source file:   Device\Source\ARM\startup_MKL25Z4.s
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

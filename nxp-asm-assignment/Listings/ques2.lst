@@ -1,0 +1,69 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             myFxn, CODE, READONLY
+    2 00000000                 EXPORT           Fxn
+    3 00000000         
+    4 00000000         Fxn     PROC
+    5 00000000 4288            CMP              R0, R1
+    6 00000002 DDFF            BLE              LessThan1
+    7 00000004 0008    LessThan1
+                               MOVS             R0, R1
+    8 00000006 4290            CMP              R0, R2
+    9 00000008 DDFF            BLE              LessThan2
+   10 0000000A 0010    LessThan2
+                               MOVS             R0, R2
+   11 0000000C 4770            BX               LR
+   12 0000000E                 ENDP
+   13 0000000E         
+   14 0000000E                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0+ --apcs=inter
+work --depend=.\objects\ques2.d -o.\objects\ques2.o -I.\RTE\Device\MKL25Z128xxx
+4 -I.\RTE\_Target_1 -IC:\Users\selor\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CM
+SIS\Core\Include -IC:\Users\selor\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP
+\1.15.0\Device\Include --predefine="__EVAL SETA 1" --predefine="__UVISION_VERSI
+ON SETA 531" --predefine="_RTE_ SETA 1" --predefine="MKL25Z128xxx4 SETA 1" --pr
+edefine="_RTE_ SETA 1" --list=.\listings\ques2.lst ques2.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Fxn 00000000
+
+Symbol: Fxn
+   Definitions
+      At line 4 in file ques2.s
+   Uses
+      At line 2 in file ques2.s
+Comment: Fxn used once
+LessThan1 00000004
+
+Symbol: LessThan1
+   Definitions
+      At line 7 in file ques2.s
+   Uses
+      At line 6 in file ques2.s
+Comment: LessThan1 used once
+LessThan2 0000000A
+
+Symbol: LessThan2
+   Definitions
+      At line 10 in file ques2.s
+   Uses
+      At line 9 in file ques2.s
+Comment: LessThan2 used once
+myFxn 00000000
+
+Symbol: myFxn
+   Definitions
+      At line 1 in file ques2.s
+   Uses
+      None
+Comment: myFxn unused
+4 symbols
+338 symbols in table

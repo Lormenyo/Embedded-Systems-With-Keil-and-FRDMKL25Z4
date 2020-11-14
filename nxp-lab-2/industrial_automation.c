@@ -1,4 +1,4 @@
-#include <MKL25Z4.h>>
+#include <MKL25Z4.h>
 #include <stdint.h>
 
 #define MASK(X) (1<<X)
@@ -64,7 +64,6 @@ int main (void) {
     while (1)
     {
 
-			
 			sevenSegForward();
 			check_speed_status();
 			sevenSegReverse();

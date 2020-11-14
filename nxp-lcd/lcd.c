@@ -65,22 +65,66 @@ void init_pins(){
 }
 
 void delay_ms(int t_ms){
-	for (int i=0; i<t_ms; i++)
-		for (int j=0; j<48000;j++);
+	int i,j;
+	for (i=0; i<t_ms; i++)
+		for (j=0; j<48000;j++);
 }
 
+static void write_to_data_pins(uint8_t data){
+        uint32_t gpio_temp;
+     
+       // Get GPIO-C Data Register
+       gpio_temp = GPIOC->PDOR;
+     
+      // Update the LCD data line DB7
+       if (data & 0x80){
+            gpio_temp |= DB7;
+        }
+        else{
+            gpio_temp &= ~DB7;
+        }
+         
+        // Update the LCD data line DB6
+        if (data & 0x40){
+            gpio_temp |= DB6;
+        }
+        else{
+            gpio_temp &= ~DB6;
+        }
+         
+        // Update the LCD data line DB5
+        if (data & 0x20){
+            gpio_temp |= DB5;
+        }
+        else{
+            gpio_temp &= ~DB5;
+        }
+         
+        // Update the LCD data line DB4
+        if (data & 0x10){
+            gpio_temp |= DB4;
+        }
+        else{
+            gpio_temp &= ~DB4;
+        }
+         
+        // Write updated data to GPIO-C Port
+        GPIOC->PDOR = gpio_temp;
+}
  
 
 void lcd_write_instruc (unsigned char instruction){
-delay_ms(2);
+	delay_ms(2);
 //set RS pin LOW, it is an instruction not data
 	PTA->PCOR|=MASK(RS);
 //set E LOW,
 	PTA->PCOR|=MASK(E);
+	delay_ms(1);
 //write instruction
-	
+	write_to_data_pins((instruction << 4) & 0xF0);
 //set E  HIGH, then LOW, (generate falling edge to write)
 	PTA->PSOR|=MASK(E);
+	delay_ms(1);
 	PTA->PCOR|=MASK(E);
 	}
 
@@ -90,11 +134,14 @@ delay_ms(2);
 	PTA->PSOR|=MASK(RS);
 	//set E LOW,
 	PTA->PCOR|=MASK(E);
+	delay_ms(1);
 //write data
-	
+	write_to_data_pins((c << 4) & 0xF0);
 	//set E  HIGH, then LOW, (generate falling edge to write)
 	PTA->PSOR|=MASK(E);
+	delay_ms(1);
 	PTA->PCOR|=MASK(E);
+	delay_ms(1);
 	
 	}
 
@@ -140,7 +187,7 @@ void lcd_write_string(char *s)
 int main(void)
 {
 
-	Init_Pins();
+	init_pins();
 	
 	lcd_init();
 	lcd_clear();

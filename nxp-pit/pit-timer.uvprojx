@@ -49,7 +49,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>lcd</OutputName>
+          <OutputName>pit-timer</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
@@ -384,9 +384,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>lcd.c</FileName>
+              <FileName>pit.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\lcd.c</FilePath>
+              <FilePath>.\pit.c</FilePath>
             </File>
           </Files>
         </Group>

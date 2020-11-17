@@ -6,3 +6,4 @@
 .\objects\lcd.o: C:\Users\selor\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
 .\objects\lcd.o: C:\Users\selor\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
 .\objects\lcd.o: .\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h
+.\objects\lcd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

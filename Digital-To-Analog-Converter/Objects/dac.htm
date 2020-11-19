@@ -1,13 +1,13 @@
 <!doctype html public "-//w3c//dtd html 4.0 transitional//en">
 <html><head>
-<title>Static Call Graph - [.\Objects\pit-timer.axf]</title></head>
+<title>Static Call Graph - [.\Objects\dac.axf]</title></head>
 <body><HR>
-<H1>Static Call Graph for image .\Objects\pit-timer.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Thu Nov 19 11:47:09 2020
+<H1>Static Call Graph for image .\Objects\dac.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Nov 18 13:00:35 2020
 <BR><P>
-<H3>Maximum Stack Usage =         16 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =          8 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
-__rt_entry_main &rArr; main &rArr; init_pit &rArr; __NVIC_SetPriority
+__rt_entry_sh &rArr; __user_setup_stackheap
 <P>
 <H3>
 Functions with no stack information
@@ -22,7 +22,6 @@ Mutually Recursive functions
  <LI><a href="#[7]">HardFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[7]">HardFault_Handler</a><BR>
  <LI><a href="#[8]">SVC_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[8]">SVC_Handler</a><BR>
  <LI><a href="#[9]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[9]">PendSV_Handler</a><BR>
- <LI><a href="#[a]">SysTick_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[a]">SysTick_Handler</a><BR>
 </UL>
 <P>
 <H3>
@@ -45,7 +44,7 @@ Function Pointers
  <LI><a href="#[11]">LVD_LVW_IRQHandler</a> from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
  <LI><a href="#[26]">MCG_IRQHandler</a> from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
  <LI><a href="#[6]">NMI_Handler</a> from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
- <LI><a href="#[21]">PIT_IRQHandler</a> from pit.o(i.PIT_IRQHandler) referenced from startup_mkl25z4.o(RESET)
+ <LI><a href="#[21]">PIT_IRQHandler</a> from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
  <LI><a href="#[29]">PORTA_IRQHandler</a> from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
  <LI><a href="#[2a]">PORTD_IRQHandler</a> from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
  <LI><a href="#[9]">PendSV_Handler</a> from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
@@ -58,7 +57,7 @@ Function Pointers
  <LI><a href="#[15]">SPI0_IRQHandler</a> from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
  <LI><a href="#[16]">SPI1_IRQHandler</a> from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
  <LI><a href="#[8]">SVC_Handler</a> from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
- <LI><a href="#[a]">SysTick_Handler</a> from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ <LI><a href="#[a]">SysTick_Handler</a> from dac.o(i.SysTick_Handler) referenced from startup_mkl25z4.o(RESET)
  <LI><a href="#[2b]">SystemInit</a> from system_mkl25z4.o(i.SystemInit) referenced from startup_mkl25z4.o(.text)
  <LI><a href="#[1c]">TPM0_IRQHandler</a> from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
  <LI><a href="#[1d]">TPM1_IRQHandler</a> from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
@@ -186,8 +185,8 @@ Global Symbols
 <P><STRONG><a name="[67]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[39]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
-<LI>Call Chain = __rt_entry_main &rArr; main &rArr; init_pit &rArr; __NVIC_SetPriority
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_main &rArr; exit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 <LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -239,13 +238,6 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_mkl25z4.o(RESET)
 </UL>
-<P><STRONG><a name="[a]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
-</UL>
-<BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> startup_mkl25z4.o(RESET)
-</UL>
 <P><STRONG><a name="[1a]"></a>ADC0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mkl25z4.o(RESET)
 </UL>
@@ -289,6 +281,9 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_mkl25z4.o(RESET)
 </UL>
 <P><STRONG><a name="[26]"></a>MCG_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_mkl25z4.o(RESET)
+</UL>
+<P><STRONG><a name="[21]"></a>PIT_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mkl25z4.o(RESET)
 </UL>
 <P><STRONG><a name="[29]"></a>PORTA_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
@@ -390,42 +385,35 @@ Global Symbols
 
 <P><STRONG><a name="[71]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[21]"></a>PIT_IRQHandler</STRONG> (Thumb, 172 bytes, Stack size 0 bytes, pit.o(i.PIT_IRQHandler))
+<P><STRONG><a name="[a]"></a>SysTick_Handler</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, dac.o(i.SysTick_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mkl25z4.o(RESET)
 </UL>
 <P><STRONG><a name="[2b]"></a>SystemInit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, system_mkl25z4.o(i.SystemInit))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mkl25z4.o(.text)
 </UL>
-<P><STRONG><a name="[43]"></a>init_led</STRONG> (Thumb, 70 bytes, Stack size 0 bytes, pit.o(i.init_led))
+<P><STRONG><a name="[45]"></a>init_DAC</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, dac.o(i.init_DAC))
 <BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[3a]"></a>main</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, pit.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = main &rArr; init_pit &rArr; __NVIC_SetPriority
-</UL>
-<BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_pit
-<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_led
-</UL>
-<BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+<P><STRONG><a name="[44]"></a>init_pin</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, dac.o(i.init_pin))
+<BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[44]"></a>init_pit</STRONG> (Thumb, 154 bytes, Stack size 8 bytes, pit.o(i.init_pit))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = init_pit &rArr; __NVIC_SetPriority
+<P><STRONG><a name="[43]"></a>init_systick</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, dac.o(i.init_systick))
+<BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
-<BR>[Calls]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
+
+<P><STRONG><a name="[3a]"></a>main</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, dac.o(i.main))
+<BR><BR>[Calls]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_systick
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_pin
+<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_DAC
 </UL>
-<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 <P>
 <H3>
 Local Symbols
-</H3>
-<P><STRONG><a name="[45]"></a>__NVIC_SetPriority</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, pit.o(i.__NVIC_SetPriority))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __NVIC_SetPriority
-</UL>
-<BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_pit
-</UL>
-<P>
+</H3><P>
 <H3>
 Undefined Global Symbols
 </H3>

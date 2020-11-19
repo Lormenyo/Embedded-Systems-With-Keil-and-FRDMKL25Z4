@@ -21,23 +21,23 @@ Target DLL:      CMSIS_AGDI.dll V1.32.12.0
 Dialog DLL:      TARMCM1.DLL V1.14.3.0
  
 <h2>Project:</h2>
-C:\Users\lorme\Desktop\School\Embedded\Embedded-Systems-With-Keil-and-FRDMKL25Z4\nxp-pit\pit-timer.uvprojx
-Project File Date:  11/19/2020
+C:\Users\lorme\Desktop\School\Embedded\Digital-To-Analog-Converter\dac.uvprojx
+Project File Date:  11/18/2020
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-assembling startup_MKL25Z4.s...
-compiling pit.c...
-pit.c(6): warning:  #1295-D: Deprecated declaration init_led - give arg types
-  void init_led();
-pit.c(7): warning:  #1295-D: Deprecated declaration init_pit - give arg types
-  void init_pit();
-pit.c: 2 warnings, 0 errors
-compiling system_MKL25Z4.c...
+compiling dac.c...
+dac.c(6): warning:  #1295-D: Deprecated declaration init_DAC - give arg types
+  void init_DAC();
+dac.c(7): warning:  #1295-D: Deprecated declaration init_pin - give arg types
+  void init_pin();
+dac.c(8): warning:  #1295-D: Deprecated declaration init_systick - give arg types
+  void init_systick();
+dac.c: 3 warnings, 0 errors
 linking...
-Program Size: Code=948 RO-data=276 RW-data=4 ZI-data=356  
-".\Objects\pit-timer.axf" - 0 Error(s), 2 Warning(s).
+Program Size: Code=544 RO-data=496 RW-data=4 ZI-data=356  
+".\Objects\dac.axf" - 0 Error(s), 3 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -64,9 +64,9 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.4.0
 
    * Component: Keil::Device:Startup:2.5.0
-      Source file:   Device\Source\ARM\startup_MKL25Z4.s
       Source file:   Device\Source\system_MKL25Z4.c
       Include file:  Device\Source\system_MKL25Z4.h
+      Source file:   Device\Source\ARM\startup_MKL25Z4.s
 Build Time Elapsed:  00:00:01
 </pre>
 </body>

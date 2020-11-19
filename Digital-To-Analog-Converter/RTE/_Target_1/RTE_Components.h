@@ -3,7 +3,7 @@
  * Auto generated Run-Time-Environment Configuration File
  *      *** Do not modify ! ***
  *
- * Project: 'pit-timer' 
+ * Project: 'dac' 
  * Target:  'Target 1' 
  */
 

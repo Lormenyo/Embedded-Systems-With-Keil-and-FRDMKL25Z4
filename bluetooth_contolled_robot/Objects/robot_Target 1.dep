@@ -1,0 +1,119 @@
+Dependencies for Project 'robot', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\motor.h)(0x5FDD3008)()
+F (.\motor.c)(0x5FDD2B14)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Target_1-IC:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\lorme\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="532" -D_RTE_ -DMKL25Z128xxx4 -D_RTE_-o .\objects\motor.o --omf_browse .\objects\motor.crf --depend .\objects\motor.d)
+I (motor.h)(0x5FDD3008)
+I (general.h)(0x5FDBC839)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.H)(0x585BEC8A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63F7FC)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8F41A2)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F41A2)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E837742)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8F41A2)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x56448D1A)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63F80A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63F7FC)
+I (led.h)(0x5FDD2231)
+F (.\general.h)(0x5FDBC839)()
+F (.\main.c)(0x5FDFBADC)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Target_1-IC:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\lorme\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="532" -D_RTE_ -DMKL25Z128xxx4 -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (motor.h)(0x5FDD3008)
+I (general.h)(0x5FDBC839)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.H)(0x585BEC8A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63F7FC)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8F41A2)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F41A2)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E837742)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8F41A2)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x56448D1A)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63F80A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63F7FC)
+I (led.h)(0x5FDD2231)
+I (lcd.h)(0x5FDBC3F6)
+I (ultrasonic.h)(0x5FDCF5D5)
+I (queue.h)(0x5FDBD517)
+I (serial.h)(0x5FDD3308)
+F (.\general.c)(0x5FDBC73E)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Target_1-IC:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\lorme\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="532" -D_RTE_ -DMKL25Z128xxx4 -D_RTE_-o .\objects\general.o --omf_browse .\objects\general.crf --depend .\objects\general.d)
+I (general.h)(0x5FDBC839)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.H)(0x585BEC8A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63F7FC)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8F41A2)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F41A2)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E837742)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8F41A2)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x56448D1A)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63F80A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63F7FC)
+F (.\led.c)(0x5FDD2430)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Target_1-IC:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\lorme\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="532" -D_RTE_ -DMKL25Z128xxx4 -D_RTE_-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (general.h)(0x5FDBC839)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.H)(0x585BEC8A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63F7FC)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8F41A2)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F41A2)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E837742)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8F41A2)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x56448D1A)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63F80A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63F7FC)
+I (led.h)(0x5FDD2231)
+F (.\led.h)(0x5FDD2231)()
+F (.\lcd.h)(0x5FDBC3F6)()
+F (.\lcd.c)(0x5FDBC2C5)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Target_1-IC:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\lorme\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="532" -D_RTE_ -DMKL25Z128xxx4 -D_RTE_-o .\objects\lcd.o --omf_browse .\objects\lcd.crf --depend .\objects\lcd.d)
+I (lcd.h)(0x5FDBC3F6)
+I (general.h)(0x5FDBC839)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.H)(0x585BEC8A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63F7FC)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8F41A2)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F41A2)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E837742)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8F41A2)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x56448D1A)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63F80A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63F7FC)
+F (.\ultrasonic.c)(0x5FDCF5E0)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Target_1-IC:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\lorme\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="532" -D_RTE_ -DMKL25Z128xxx4 -D_RTE_-o .\objects\ultrasonic.o --omf_browse .\objects\ultrasonic.crf --depend .\objects\ultrasonic.d)
+I (general.h)(0x5FDBC839)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.H)(0x585BEC8A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63F7FC)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8F41A2)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F41A2)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E837742)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8F41A2)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x56448D1A)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63F80A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63F7FC)
+I (ultrasonic.h)(0x5FDCF5D5)
+F (.\ultrasonic.h)(0x5FDCF5D5)()
+F (.\serial.h)(0x5FDD3308)()
+F (.\serial.c)(0x5FDFB887)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Target_1-IC:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\lorme\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="532" -D_RTE_ -DMKL25Z128xxx4 -D_RTE_-o .\objects\serial.o --omf_browse .\objects\serial.crf --depend .\objects\serial.d)
+I (general.h)(0x5FDBC839)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.H)(0x585BEC8A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63F7FC)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8F41A2)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F41A2)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E837742)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8F41A2)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x56448D1A)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5F63F80A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63F7FC)
+I (queue.h)(0x5FDBD517)
+I (serial.h)(0x5FDD3308)
+F (.\queue.h)(0x5FDBD517)()
+F (.\queue.c)(0x5FDBE3A9)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Target_1-IC:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\lorme\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="532" -D_RTE_ -DMKL25Z128xxx4 -D_RTE_-o .\objects\queue.o --omf_browse .\objects\queue.crf --depend .\objects\queue.d)
+I (queue.h)(0x5FDBD517)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.H)(0x585BEC8A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63F7FC)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8F41A2)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F41A2)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E837742)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8F41A2)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x56448D1A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F63F7FC)
+F (RTE\Device\MKL25Z128xxx4\startup_MKL25Z4.s)(0x56448D1A)(--cpu Cortex-M0+ --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Target_1-IC:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\lorme\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include--pd "__UVISION_VERSION SETA 532" --pd "_RTE_ SETA 1" --pd "MKL25Z128xxx4 SETA 1" --pd "_RTE_ SETA 1"--list .\listings\startup_mkl25z4.lst --xref -o .\objects\startup_mkl25z4.o --depend .\objects\startup_mkl25z4.d)
+F (RTE\Device\MKL25Z128xxx4\system_MKL25Z4.c)(0x56448D1A)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Target_1-IC:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\lorme\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="532" -D_RTE_ -DMKL25Z128xxx4 -D_RTE_-o .\objects\system_mkl25z4.o --omf_browse .\objects\system_mkl25z4.crf --depend .\objects\system_mkl25z4.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F63F7FC)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.h)(0x585BEC8A)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8F41A2)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F41A2)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E837742)
+I (C:\Users\lorme\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8F41A2)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x56448D1A)
+F (RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x56448D1A)()

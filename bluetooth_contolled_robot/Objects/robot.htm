@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\robot.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\robot.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sun Dec 20 20:58:07 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Mon Dec 21 14:02:24 2020
 <BR><P>
 <H3>Maximum Stack Usage =        216 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -651,6 +651,7 @@ Global Symbols
 
 <P><STRONG><a name="[64]"></a>forward_motors</STRONG> (Thumb, 82 bytes, Stack size 0 bytes, motor.o(i.forward_motors))
 <BR><BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;carBluetoothControl
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[7d]"></a>init_bluetooth_pins</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, serial.o(i.init_bluetooth_pins))
@@ -745,7 +746,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[41]"></a>main</STRONG> (Thumb, 140 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[41]"></a>main</STRONG> (Thumb, 148 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 216 + Unknown Stack Size
 <LI>Call Chain = main &rArr; doTxRx_task &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
@@ -768,8 +769,10 @@ Global Symbols
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;doTxRx_task
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Q_Init
 <LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_UART
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slow_down
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_motor_timer
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_motor_control_lines
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;forward_motors
 </UL>
 <BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
@@ -802,6 +805,7 @@ Global Symbols
 
 <P><STRONG><a name="[68]"></a>slow_down</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, motor.o(i.slow_down))
 <BR><BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;carBluetoothControl
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[6a]"></a>stop_car</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, motor.o(i.stop_car))

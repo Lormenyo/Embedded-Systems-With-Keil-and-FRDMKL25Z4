@@ -27,7 +27,13 @@ Project File Date:  12/17/2020
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-".\Objects\robot.axf" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c(8): warning:  #1295-D: Deprecated declaration carDefaultRoutine - give arg types
+  void carDefaultRoutine();
+main.c: 1 warning, 0 errors
+linking...
+Program Size: Code=6564 RO-data=224 RW-data=52 ZI-data=900  
+".\Objects\robot.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -54,10 +60,10 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.4.0
 
    * Component: Keil::Device:Startup:2.5.0
-      Source file:   Device\Source\ARM\startup_MKL25Z4.s
       Source file:   Device\Source\system_MKL25Z4.c
+      Source file:   Device\Source\ARM\startup_MKL25Z4.s
       Include file:  Device\Source\system_MKL25Z4.h
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

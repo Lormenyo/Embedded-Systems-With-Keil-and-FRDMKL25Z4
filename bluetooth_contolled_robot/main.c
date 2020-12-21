@@ -43,7 +43,12 @@ int main(){
 		lcd_goto(0,1);
 		lcd_write_string(buffer);
 		raise_obstacle_alarm();
-		carDefaultRoutine();
+		//carDefaultRoutine();
+		forward_motors();
+		slow_down();
+		//stop_car();
+		//forward_motors();
+		//move_faster();
 	}
 }
 
@@ -57,13 +62,13 @@ void carDefaultRoutine(){
 	switch (next_state){
 		case S1:
 			forward_motors();
-			if ((current_time-last_run)>=1000){
+			if ((current_time-last_run)>=500){
 				last_run=current_time;
 				next_state=S2;
 			}
 			break;
 		case S2:
-			turn_car_left();
+			reverse_motors();
 			if ((current_time-last_run)>=500){
 				last_run=current_time;
 				next_state=S3;
@@ -71,7 +76,7 @@ void carDefaultRoutine(){
 			break;
 			case S3:
 			forward_motors();
-			if ((current_time-last_run)>=1000){
+			if ((current_time-last_run)>=500){
 				last_run=current_time;
 				next_state=S4;
 			}
@@ -85,21 +90,21 @@ void carDefaultRoutine(){
 			break;
 		case S5:
 			forward_motors();
-			if ((current_time-last_run)>=2000){
+			if ((current_time-last_run)>=500){
 				last_run=current_time;
 				next_state=S6;
 			}
 			break;
 		case S6:
-			reverse_motors();
-			if ((current_time-last_run)>=1000){
+			turn_car_left();
+			if ((current_time-last_run)>=500){
 				last_run=current_time;
 				next_state=S7;
 			}
 			break;
 		case S7:
 			stop_car();
-			if ((current_time-last_run)>=1000){
+			if ((current_time-last_run)>=500){
 				last_run=current_time;
 				next_state=S1;
 			}

@@ -207,12 +207,15 @@ int main (void) {
 
 void doTxRx_task(){
 	uint8_t buffer[80], c, * bp;
+	static int i = 0;
 	if (Q_Size(&RxQ) == 0)
 		return;	//nothing received. Exit
-	//lightLED();
+	lightLED();
 	//echo character sent:
 	c = Q_Dequeue(&RxQ);
-	sprintf((char *) buffer, "Data sent %c", c);
+	int data[] = {88, 75, 34, 99, 50};
+	
+	sprintf((char *) buffer, "%c", data[i]);
 	// enqueue string
 	bp = buffer;
 	while (*bp != '\0') {	//enqueue full string
@@ -220,6 +223,8 @@ void doTxRx_task(){
 		Q_Enqueue(&TxQ, *bp);
 		bp++;
 	}
+	i++;
+	if (i==5)i=0;
 	// start transmitter if it isn't already running
 	if (!(UART0->C2 & UART0_C2_TIE_MASK)) {
 		UART0->C2 |= UART0_C2_TIE(1);

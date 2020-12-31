@@ -3,9 +3,9 @@
 <title>Static Call Graph - [.\Objects\serial.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\serial.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Fri Dec 18 00:16:24 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Mon Dec 28 16:15:18 2020
 <BR><P>
-<H3>Maximum Stack Usage =        248 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        264 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 __rt_entry_main &rArr; main &rArr; doTxRx_task &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 <P>
@@ -204,7 +204,7 @@ Global Symbols
 <P><STRONG><a name="[84]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[3e]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 248 + Unknown Stack Size
+<BR><BR>[Stack]<UL><LI>Max Depth = 264 + Unknown Stack Size
 <LI>Call Chain = __rt_entry_main &rArr; main &rArr; doTxRx_task &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
@@ -227,8 +227,9 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
 </UL>
 
-<P><STRONG><a name="[62]"></a>__aeabi_memcpy4</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, rt_memcpy.o(.emb_text))
+<P><STRONG><a name="[5e]"></a>__aeabi_memcpy4</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, rt_memcpy.o(.emb_text))
 <BR><BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;doTxRx_task
 </UL>
 
 <P><STRONG><a name="[87]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memcpy.o(.emb_text), UNUSED)
@@ -478,7 +479,7 @@ Global Symbols
 
 <P><STRONG><a name="[8f]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[5e]"></a>Control_RGB_LEDs</STRONG> (Thumb, 70 bytes, Stack size 8 bytes, serial.o(i.Control_RGB_LEDs))
+<P><STRONG><a name="[5f]"></a>Control_RGB_LEDs</STRONG> (Thumb, 70 bytes, Stack size 8 bytes, serial.o(i.Control_RGB_LEDs))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Control_RGB_LEDs
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lightLED
@@ -488,7 +489,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;doTxRx_task
 </UL>
 
-<P><STRONG><a name="[61]"></a>Init_RGB_LEDs</STRONG> (Thumb, 124 bytes, Stack size 0 bytes, serial.o(i.Init_RGB_LEDs))
+<P><STRONG><a name="[62]"></a>Init_RGB_LEDs</STRONG> (Thumb, 124 bytes, Stack size 0 bytes, serial.o(i.Init_RGB_LEDs))
 <BR><BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -534,7 +535,7 @@ Global Symbols
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Q_Enqueue
 </UL>
 
-<P><STRONG><a name="[5f]"></a>Q_Init</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, queue.o(i.Q_Init))
+<P><STRONG><a name="[60]"></a>Q_Init</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, queue.o(i.Q_Init))
 <BR><BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -562,11 +563,13 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_mkl25z4.o(RESET)
 </UL>
-<P><STRONG><a name="[5c]"></a>doTxRx_task</STRONG> (Thumb, 94 bytes, Stack size 96 bytes, serial.o(i.doTxRx_task))
-<BR><BR>[Stack]<UL><LI>Max Depth = 216 + Unknown Stack Size
+<P><STRONG><a name="[5c]"></a>doTxRx_task</STRONG> (Thumb, 138 bytes, Stack size 112 bytes, serial.o(i.doTxRx_task))
+<BR><BR>[Stack]<UL><LI>Max Depth = 232 + Unknown Stack Size
 <LI>Call Chain = doTxRx_task &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lightLED
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Q_Size
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Q_Full
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Q_Enqueue
@@ -575,29 +578,30 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[60]"></a>init_pins</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, serial.o(i.init_pins))
+<P><STRONG><a name="[61]"></a>init_pins</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, serial.o(i.init_pins))
 <BR><BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[5b]"></a>lightLED</STRONG> (Thumb, 88 bytes, Stack size 4 bytes, serial.o(i.lightLED))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = lightLED &rArr; Control_RGB_LEDs
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Control_RGB_LEDs
+<BR>[Calls]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Control_RGB_LEDs
 </UL>
-<BR>[Called By]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_IRQHandler
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;doTxRx_task
+<LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_IRQHandler
 </UL>
 
 <P><STRONG><a name="[3f]"></a>main</STRONG> (Thumb, 50 bytes, Stack size 32 bytes, serial.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 248 + Unknown Stack Size
+<BR><BR>[Stack]<UL><LI>Max Depth = 264 + Unknown Stack Size
 <LI>Call Chain = main &rArr; doTxRx_task &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
-<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_pins
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_pins
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;doTxRx_task
 <LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Send_String
 <LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_UART
-<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_RGB_LEDs
-<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Q_Init
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_RGB_LEDs
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Q_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
